@@ -1,0 +1,13 @@
+.Footer {
+  text-align: center;
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+
+.Footer_component {
+  margin-top: auto;
+  color: white;
+}
