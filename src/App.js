@@ -72,9 +72,9 @@ function App() {
   ))
   
   return (
-    <div>
-      {tenzies && <Confetti />}
+    <>
       <div className = "main-content">
+        {tenzies && <Confetti />}
         <h1 className="title">Tenzies</h1>
         <p className="instructions">Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
         <div className="dice-container">
@@ -83,12 +83,11 @@ function App() {
         <div className = "btn-container">
           <button type="button" className="btn btn-primary btn-lg" onClick={rollDice}>{tenzies ? "New Game" : "Roll"}</button>
         </div>
-        
+        <div className = "Footer">
+          <Footer />
+        </div>
       </div>
-      <div className = "Footer">
-        <Footer />
-      </div>
-    </div>
+    </>
   )
 }
 
